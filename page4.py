@@ -26,8 +26,9 @@ class caihaopage4:
         pattern = re.compile('<td class="list_o">.*?<a.*?>(.*?)</a>.*?<a.*?>(.*?)</a>.*?<td.*?>(.*?)</td>.*?<td.*?>(.*?)</td>',re.S)
         items = re.findall( pattern, pageCode )
         for i in items:
+            input = raw_input()
             for g in i:
-                input = raw_input()
+                
                 print g
 
     def start(self):
